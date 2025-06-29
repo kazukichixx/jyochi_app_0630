@@ -1,0 +1,39 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>To do list</title>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">  
+</head>
+<body>
+  <header>
+    <h1 style="color: gray;">To do list</h1>
+  </header>
+  <main>
+    <div>
+        <form> 
+          <label for="content">text</label>:<input id="content" name="content" type="text"><br>
+          <label for="date">date</label>:<input id="date" name="date" type="date"><br>
+          <label for="time">time</label>:<input type="time" name="time" id="time"><br>
+          <label for="image">image</label>:<input type="file" name="image" id="image" accept="image/*"><br>
+          
+          <div id="image-preview" style="display: none;">
+            <img id="preview-img" style="max-width: 200px; max-height: 200px; margin: 10px 0;">
+            <button type="button" id="remove-image" style="background-color: #ff4444; margin-left: 10px;">画像を削除</button>
+          </div>
+          
+          <input type="button" id="button" value="add task">
+          <!-- ここにpタグでToDoリスト(task)を列挙する -->
+        <input type="button" id="all-clear" value="all clear">
+
+
+        </form>
+      </div>
+      <div id="task-space">
+        <!-- ここにpタグでToDoリスト(task)を列挙する -->
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,96 @@
+label {
+  display: inline-block; /* ラベルを横に並べるためにインラインブロックに設定 */
+  margin-right: 10px; /* ラベル間の間隔を設定 */
+}
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="file"] {
+  border: 1px solid #ccc; /* 入力フィールドの境界線を設定 */
+  padding: 8px; /* 入力フィールド内のパディングを設定 */
+  margin-bottom: 10px; /* 入力フィールド間のマージンを設定 */
+}
+
+input[type="button"] {
+  background-color:gray; /* ボタンの背景色を設定 */
+  color: white; /* ボタンのテキスト色を設定 */
+  border: none; /* ボタンの境界線を削除 */
+  padding: 10px 20px; /* ボタン内のパディングを設定 */
+  text-align: center; /* ボタン内のテキストを中央揃えに設定 */
+  text-decoration: none; /* テキストの装飾を削除 */
+  display: inline-block; /* ボタンをインラインブロックに設定 */
+  font-size: 16px; /* フォントサイズを設定 */
+  margin: 4px 2px; /* ボタン間のマージンを設定 */
+  cursor: pointer; /* カーソルをポインターに設定 */
+  transition: background-color 0.3s ease; /* 背景色の変化を滑らかに */
+}
+
+input[type="button"]:hover {
+  background-color: gray; /* ホバー時のボタンの背景色を設定 */
+}
+
+#task-space {
+  margin-top: 20px; /* タスク表示エリアの上マージンを設定 */
+  padding: 10px; /* タスク表示エリアのパディングを設定 */
+  border-top: 2px solid gray; /* タスク表示エリアの上境界線を設定 */
+  background-color: #f9f9f9; /* 背景色を設定 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 影を設定 */
+  border-radius: 5px; /* 境界線の角を丸く */
+}
+
+body {
+
+      text-align: center;
+    }
+    
+li {
+      list-style: none;
+    }
+/* 期日の過ぎたものに取り消し線をする */
+.over {
+      text-decoration: line-through;
+    color: gray; /* 取り消し線の色をグレーに設定 */
+    }
+
+/* 画像プレビュー関連のスタイル */
+#image-preview {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+#preview-img {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#remove-image {
+  background-color: #ff4444 !important;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+#remove-image:hover {
+  background-color: #cc0000 !important;
+}
+
+/* タスク内の画像スタイル */
+.task-image {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 5px;
+  margin: 5px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.task-item {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+ 
